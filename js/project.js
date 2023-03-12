@@ -17,9 +17,11 @@ export class Project {
         const html = `
         <div class="project">
             <a href="${project.site}" target="_blank">
+            <div class="project-content">
                 <h1>${project.name}</h1>
                 <img src="${project.image}" alt="${project.name}">
                 <p>${project.description}</p>
+            </div>
             </a>   
         </div>
                
