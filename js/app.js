@@ -5,7 +5,7 @@ async function starterFunction() {
     await dataSource.getData('https://bernster01.github.io/ASCII-video-player/', 'data/info.json', 'GET')
         .then(response => response.json())
         .then(data => {
-            let project = new Project(data.name, data.description);
+            let project = new Project(data);
             displayProject(project);
         });
 

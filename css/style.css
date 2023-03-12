@@ -1,0 +1,29 @@
+html{
+    --main-color: #565656;
+    --main-color-hover: #717171;
+    --main-color-text: #fff;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    background-color: #565656;
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+.project:hover{
+    background-color: var(--main-color-hover);
+    transform: scale(1.025);
+    box-shadow: 0 0 10px 0 var(--main-color-hover);
+}
+.project a {
+    text-decoration: none;
+    color: var(--main-color-text);
+}
+.project img{
+    --border-width: 6px;
+    width: calc(80% - var(--border-width) * 2);
+    height: calc(100% - var(--border-width) * 2);
+    border: #3e3e3e var(--border-width) solid;
+}
