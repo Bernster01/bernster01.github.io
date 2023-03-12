@@ -17,6 +17,5 @@ function displayProject(project){
     projectDiv.innerHTML = project.html;
     document.body.appendChild(projectDiv);
 }
-function showAlert() {
-}
+
 addEventListener('load', starterFunction);
