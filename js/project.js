@@ -12,12 +12,6 @@ export class Project {
         this.image = projectData.image;
         this.html = this.projectHtml(projectData);
     }
-    set image(image) {
-        this.#image = image;
-    }
-    set video(video) {
-        this.#video = video;
-    }
     projectHtml(project) {
         console.log(project);
         const html = `
