@@ -13,8 +13,8 @@ export class DataSource {
             headers: headers,
         }
         if (useBody) {
-			requestInfo['body'] = JSON.stringify(body); // data needs to be parsed into JSON
-			requestInfo['headers']['Content-Type'] = 'application/json'; // we are sending json
+			requestInfo['body'] = JSON.stringify(body);
+			requestInfo['headers']['Content-Type'] = 'application/json';
 		}
         return fetch(`${url}/${endpoint}`, request);
     }
