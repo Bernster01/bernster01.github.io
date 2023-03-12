@@ -1,7 +1,38 @@
 html{
     --main-color: #565656;
     --main-color-hover: #717171;
-    --main-color-text: #fff;
+    --main-color-text: #dbdbdb;
+}
+#alert-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+#alert{
+    width: 20%;
+    height: 10%;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    color: var(--main-color-text);
+}
+#alert-close{
+    background-color: #616161;
+    padding: 0.5em;
+    border-radius: 2em;
+    cursor: pointer;
 }
 .project{
     display: flex;
