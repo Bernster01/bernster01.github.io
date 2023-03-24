@@ -7,8 +7,35 @@
     <script src="./js/app.js" type="module"></script>
 </head>
 <body>
-    <h1>Bernster</h1>
+    <header>
+        <h1>Bernster</h1>
+        <nav>
+            <ul>
+                <li><a href="#1">About me</a></li>
+                <li><a href="#project-container">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Under construction</h1>
+    <main class="container">
+        <article class="about-me-container">
+            <section>
+                <h2 id="1">About me</h2>
+                <p>
+                    I am 
+                    <script>
+                        let date = new Date();
+                        let year = date.getFullYear();
+                        let isDecember = date.getMonth() == 11;
+                        let age = (isDecember) ? year - 2001 : year - 2002;
+                    document.write(age) 
+                    </script>
+                    years old.
+                </p>
+            </section>
+            <img src="./data/img/bernster.png" alt="Bernster">
+        </article>
+    </main>
     <div class="project-container" id="project-container"></div>
     <div id="alert-container">
         <div id="alert">
