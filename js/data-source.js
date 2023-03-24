@@ -16,7 +16,7 @@ export class DataSource {
 			requestInfo['body'] = JSON.stringify(body);
 			requestInfo['headers']['Content-Type'] = 'application/json';
 		}
-        return fetch(`${url}/${endpoint}`, request);
+        return fetch(`${url}${endpoint}`, request);
     }
 
 }

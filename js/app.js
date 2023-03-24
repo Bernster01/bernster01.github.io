@@ -17,6 +17,13 @@ async function starterFunction() {
             let project = new Project(data);
             displayProject(project);
         });
+    //Ironcode
+    await dataSource.getData('https://bernster01.github.io/Ironcode/', 'data/info.json', 'GET')
+        .then(response => response.json())
+        .then(data => {
+            let project = new Project(data);
+            displayProject(project);
+        });
 
 }
 
