@@ -7,6 +7,8 @@ html{
 }
 body{
     background-color: #594f5d;
+    margin: 0;
+    overflow: hidden;
 }
 .container{
     display: flex;
@@ -14,6 +16,50 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--main-color);
+    color: var(--main-color-text);
+    padding: 0 1em;
+    z-index: 100;
+    position: relative;
+}
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: var(--main-color);
+    color: var(--main-color-text);
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4rem 7rem -1rem var(--main-color-hover);
+    z-index: 99;
+}
+nav ul{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 1.5rem;
+    cursor: pointer;
+    margin: 0 2em;
+}
+nav li a{
+    text-decoration: none;
+    color: var(--main-color-text);
+}
+nav li:hover{
+    background-color: var(--main-color-hover);
 }
 #alert-container{
     position: fixed;
