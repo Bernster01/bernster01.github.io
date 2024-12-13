@@ -120,7 +120,7 @@ nav li:hover{
     display: block;
     background-color: #565656;
     width: 400px;
-    height: 500px;
+    height: 600px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
@@ -147,7 +147,6 @@ nav li:hover{
     
     background-color: #202020;
     width: calc(70% - var(--border-width) * 2);
-    height: calc(70% - var(--border-width) * 2);
     max-width: calc(400px - var(--border-width) * 2);
     max-height: calc(500px - var(--border-width) * 2);
     border: #3e3e3e var(--border-width) solid;
