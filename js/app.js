@@ -24,6 +24,13 @@ async function starterFunction() {
             let project = new Project(data);
             displayProject(project);
         });
+    //Elprisbladet
+    await dataSource.getData('https://bernster01.github.io/Elpriser/', 'data/info.json', 'GET')
+        .then(response => response.json())
+        .then(data => {
+            let project = new Project(data);
+            displayProject(project);
+        });
 
 }
 
